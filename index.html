@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/45f5c6c551.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>october-class</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .mainContainer {
+        width: 100vw;
+        height: 100vh;
+        background-color: #9073f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .motherDiv {
+        width: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        height: 80%;
+        /* padding: 10px; */
+        /* background-color: red; */
+      }
+
+      #childDiv {
+        background-color: white;
+        width: 48%;
+        border-radius: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
+
+      #childDiv {
+        background-color: white;
+        width: 48%;
+        border-radius: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
+
+      .settings {
+        width: 100%;
+        height: 12%;
+        /* background-color: red; */
+        padding: 30px 30px 0 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+        color: white;
+      }
+
+      .profile {
+        width: 100%;
+        height: 82%;
+        /* background-color: rgba(201, 60, 166, 0.449); */
+      }
+
+      .imageCard {
+        width: 100%;
+        height: 55%;
+        /* background-color: #7f70d6; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        /* justify-content: space-evenly; */
+      }
+
+      .buttonCard {
+        width: 100%;
+        height: 45%;
+        /* background-color: #27a190; */
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .image {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+
+      .username {
+        padding: 10px 0;
+        color: #dadbfb;
+        /* color: #51505a; */
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .username2 {
+        padding: 10px 0;
+        /* color: #dadbfb; */
+        color: #51505a;
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .username p {
+        font-size: 12px;
+        font-weight: 200;
+        color: #646a88;
+      }
+      .username2 p {
+        font-size: 12px;
+        font-weight: 200;
+        color: #646a88;
+      }
+
+      .buttons {
+        width: 100%;
+        height: 28%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        /* justify-content: space-evenly; */
+        background-color: #7653ed;
+        border-radius: 8px;
+      }
+
+      .buttons button {
+        width: 80%;
+        height: 100%;
+        /* background-color: #a82192; */
+        background-color: #7653ed;
+        color: #f8e8ff;
+        border: none;
+        outline: navajowhite;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .buttons1 button {
+        width: 80%;
+        height: 100%;
+        /* background-color: #a82192; */
+        background-color: #20284c;
+
+        color: #f8e8ff;
+        border: none;
+        outline: navajowhite;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .buttons1 {
+        background-color: #20284c;
+        width: 100%;
+        height: 28%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        /* justify-content: space-evenly; */
+        /* background-color: #7653ed; */
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="motherDiv">
+        <div id="childDiv" style="background-color: #20294b">
+          <div class="settings">
+            <span
+              class="material-symbols-outlined"
+              style="color: #7f70d6; font-weight: 500"
+            >
+              settings
+            </span>
+          </div>
+          <div class="profile">
+            <div class="imageCard">
+              <div class="image">
+                <img
+                  src="https://i.pinimg.com/736x/23/87/d8/2387d8f1257021c4868c2e326269b796.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="username">
+                <h3>Isaac Oyesile</h3>
+                <p>Frontend Developer</p>
+              </div>
+            </div>
+            <div class="buttonCard">
+              <div class="buttons">
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+
+                <button>Instagram</button>
+              </div>
+
+              <div class="buttons">
+                <i
+                  class="fa-brands fa-twitter"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+                <button>Twitter</button>
+              </div>
+
+              <div class="buttons">
+                <i
+                  class="fa-brands fa-github"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+                <button>GitHub</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="childDiv" style="background-color: #e7e4f7">
+          <div class="settings">
+            <span
+              class="material-symbols-outlined"
+              style="color: #7f70d6; font-weight: 500"
+            >
+              settings
+            </span>
+          </div>
+          <div class="profile">
+            <div class="imageCard">
+              <div class="image">
+                <img
+                  src="https://i.pinimg.com/736x/23/87/d8/2387d8f1257021c4868c2e326269b796.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="username2">
+                <h3>Isaac Oyesile</h3>
+                <p>Frontend Developer</p>
+              </div>
+            </div>
+            <div class="buttonCard">
+              <div class="buttons1">
+                <i
+                  class="fa-brands fa-instagram"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+
+                <button>Instagram</button>
+              </div>
+
+              <div class="buttons1">
+                <i
+                  class="fa-brands fa-twitter"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+                <button>Twitter</button>
+              </div>
+
+              <div class="buttons1">
+                <i
+                  class="fa-brands fa-github"
+                  style="color: #fff8fe; font-size: 16px"
+                ></i>
+                <button>GitHub</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

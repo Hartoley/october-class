@@ -1,0 +1,94 @@
+HTML forms are used to collect user input. Data entered in a form can be sent to
+a server for processing. ```html
+<form action="/submit" method="POST">
+  <!-- Form content here -->
+</form>
+``` * **`action`** – Specifies where to send the form data (a URL or script). *
+**`method`** – Determines how data is sent (`GET` or `POST`). --- #### 🖋️ **2.
+Common Input Types** HTML offers different input types for various data. ```html
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" />
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" />
+
+  <p>Select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male" /> Male
+  <input type="radio" id="female" name="gender" value="female" /> Female
+
+  <p>Choose your skills:</p>
+  <input type="checkbox" id="html" name="skills" value="HTML" /> HTML
+  <input type="checkbox" id="css" name="skills" value="CSS" /> CSS
+
+  <label for="resume">Upload file:</label>
+  <input type="file" id="resume" name="resume" />
+</form>
+``` --- #### 🏷️ **3. Labels & Accessibility** Use `<label
+  >` to improve accessibility and form usability. ```html
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" />
+  ``` ✅ Clicking the label focuses the corresponding input field. --- #### ⬇️
+  **4. Dropdowns & Select Menus** ```html
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="nigeria">Nigeria</option>
+    <option value="ghana">Ghana</option>
+    <option value="kenya">Kenya</option>
+  </select>
+  ``` --- #### 🔘 **5. Buttons** ```html
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  ``` --- #### 🎨 **6. CSS Typography** Typography controls the visual
+  appearance of text. **Font Properties** ```css body { font-family: 'Poppins',
+  sans-serif; font-size: 16px; font-weight: 400; color: #333; } ``` **Text
+  Styling** ```css h1 { text-transform: uppercase; letter-spacing: 2px;
+  text-align: center; } p { line-height: 1.6; text-align: justify; } ``` ---
+  #### 🧠 **7. Hands-On Practice** Create and style a signup form with the
+  following fields: * Full Name * Email * Password * Gender (radio) * Skills
+  (checkboxes) * Country (dropdown) * Upload Profile Photo * Submit button
+  **Example structure:** ```html
+  <form class="signup-form">
+    <h2>Signup Form</h2>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required />
+
+    <p>Gender:</p>
+    <input type="radio" name="gender" value="male" /> Male
+    <input type="radio" name="gender" value="female" /> Female
+
+    <p>Skills:</p>
+    <input type="checkbox" name="skills" value="HTML" /> HTML
+    <input type="checkbox" name="skills" value="CSS" /> CSS
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="nigeria">Nigeria</option>
+      <option value="ghana">Ghana</option>
+    </select>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" />
+
+    <button type="submit">Sign Up</button>
+  </form>
+  ``` **Basic CSS Example:** ```css body { font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5; display: flex; justify-content: center; padding: 30px; }
+  .signup-form { background: #fff; padding: 25px; border-radius: 8px; width:
+  350px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); } .signup-form h2 { text-align:
+  center; margin-bottom: 20px; } .signup-form label { display: block;
+  margin-top: 10px; } .signup-form input, .signup-form select { width: 100%;
+  padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+  .signup-form button { margin-top: 15px; width: 100%; padding: 10px; border:
+  none; background: #007bff; color: #fff; font-size: 16px; border-radius: 4px;
+  cursor: pointer; } .signup-form button:hover { background: #0056b3; }
+</label>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 - Tables, Multimedia & Box Model</title>
+    <style>
+      /* ---------- BOX MODEL DEMO ---------- */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .course-container {
+        background: #fff;
+        padding: 20px; /* Inner space */
+        border: 2px solid #ddd; /* Border */
+        margin: 30px auto; /* Outer space */
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ---------- TABLE STYLING ---------- */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #007bff;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* ---------- MULTIMEDIA SECTION ---------- */
+      .media {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      iframe,
+      video,
+      audio {
+        margin: 10px 0;
+        border-radius: 8px;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📘 Course Schedule</h1>
+
+    <div class="course-container">
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+          <th>Instructor</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td colspan="2">HTML Basics (Tags, Elements, Attributes)</td>
+          <td>Mr. Ayo</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Tables & Multimedia</td>
+          <td>2 Hours</td>
+          <td rowspan="2">Ms. Sarah</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Box Model & CSS Layout</td>
+          <td>3 Hours</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Project: Personal Homepage</td>
+          <td>2 Hours</td>
+          <td>Mr. John</td>
+        </tr>
+      </table>
+
+      <div class="media">
+        <h3>🎥 Related Resources</h3>
+
+        <!-- Video -->
+        <video controls>
+          <source src="sample-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Audio -->
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mp3" />
+          Your browser does not support the audio tag.
+        </audio>
+
+        <!-- Iframe (YouTube Embed) -->
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UB1O30fR-EE"
+          title="HTML Crash Course for Beginners"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>

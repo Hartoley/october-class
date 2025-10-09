@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header sample class</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      nav {
+        width: 100%;
+        height: 15vh;
+        background-color: thistle;
+        opacity: 0.4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 50px;
+      }
+
+      .dropdown {
+        /* background-color: red; */
+        position: relative;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: violet;
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+        width: 150px;
+        top: 10vh;
+        border-radius: 5px;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100%;
+        height: 100vh;
+        /* background-image: linear-gradient(to right, white, black); */
+      "
+    >
+      <nav>
+        <div
+          style="
+            width: 120px;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            color: black;
+          "
+        >
+          K
+        </div>
+        <div
+          style="
+            width: 60%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            color: black;
+          "
+        >
+          <p>Home</p>
+          <div class="dropdown">
+            <p>Article</p>
+            <div class="dropdown-content">
+              <p>Home</p>
+              <p>Article</p>
+              <p>Article</p>
+              <p>Article</p>
+              <p>Article</p>
+            </div>
+          </div>
+          <p>Explore</p>
+          <p>Map</p>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
